@@ -14,5 +14,15 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "database": "db/my-bookshop.db"
+        }
+      }
+    }
   }
 }
