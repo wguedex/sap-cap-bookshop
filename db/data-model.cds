@@ -9,6 +9,7 @@ entity Books {
     key ID     : Integer;
         title  : localized String;
         author : Association to Authors;
+        stock  : Integer;
 }
 
 entity Authors {
