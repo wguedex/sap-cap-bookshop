@@ -6,10 +6,10 @@ module.exports = (srv) => {
 
     const { Books } = cds.entities('my.bookshop');
 
-    debugger;
+    // debugger;
 
     srv.before('CREATE','Orders', async(req)=>{
-        debugger;
+        // debugger;
         const order = req.data;
         if ( !order.amount || order.amount <= 0 ) return req.error(400, 'Order at least 1 book')
         const tx = cds.transaction(req)

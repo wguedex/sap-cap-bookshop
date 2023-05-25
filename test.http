@@ -19,6 +19,7 @@ GET http://localhost:4004/catalog/Authors(101)
 #
 POST http://localhost:4004/catalog/Authors
 Content-Type: application/json
+
 {"ID": 101, "name": "Some Author"}
 
 
@@ -28,4 +29,5 @@ Content-Type: application/json
 #
 POST http://localhost:4004/catalog/Orders
 Content-Type: application/json;IEEE754Compatible=true
+
 {"book_ID": 201, "amount": 5}
